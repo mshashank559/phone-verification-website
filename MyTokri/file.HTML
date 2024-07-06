@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Number Verification</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add this CSS code */
+    body {
+      background-image: url('image/pic.jpg'); /* Replace with your background image file */
+      background-size: cover; /* Cover the entire background */
+      background-color: #f0f0f0; /* Add a light gray background */
+    }
+   .container {
+      width: 80%; /* Set the width of the container */
+      margin: 40px auto; /* Center the container horizontally */
+      background-color: #fff; /* Set a white background */
+      padding: 20px;
+      border: 1px solid #ddd; /* Add a light gray border */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+   .square-box {
+      background-color: #000; /* Set the background color to black */
+      color: #fff; /* Set the text color to white */
+      text-align: center; /* Center the content horizontally */
+      padding: 20px; /* Add some padding to the box */
+    }
+   .mobile-image {
+      margin: 20px auto; /* Center the mobile image */
+      width: 25%; /* Reduce the width of the image */
+      border-radius: 10px; /* Add a curve to the image boundaries */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    #terms {
+      font-size: 12px; /* Reduce the font size of the terms text */
+      color: #fff; /* Set the text color to white */
+    }
+    #terms-links {
+      margin-top: 10px; /* Add some space above the terms links */
+    }
+    #terms-links a {
+      color: #337ab7; /* Set a blue color for the terms links */
+      text-decoration: none; /* Remove the underline from the links */
+    }
+    #terms-links a:hover {
+      color: #23527c; /* Set a darker blue color on hover */
+    }
+    #continue-btn {
+      transition: all 0.3s ease-in-out; /* Add a transition effect */
+    }
+    #continue-btn:hover {
+      animation: shake 0.5s; /* Add the shaking animation on hover */
+      animation-iteration-count: infinite; /* Make the animation infinite */
+    }
+    @keyframes shake {
+      0% {
+        transform: translateX(0px);
+      }
+      25% {
+        transform: translateX(-2px);
+      }
+      50% {
+        transform: translateX(2px);
+      }
+      75% {
+        transform: translateX(-2px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+    #phone-number:focus {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% {
+        border-color: #337ab7;
+      }
+      50% {
+        border-color: #fff;
+      }
+      100% {
+        border-color: #337ab7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="square-box">
+      <h1>STEP 1/2</h1>
+      <p>Enter your phone number</p>
+      <form>
+        <img src="image\phone.jpg" alt="Mobile Phone" class="mobile-image">
+        <br> <!-- Add a line break to separate the image from the input field -->
+        <input type="tel" id="phone-number" placeholder="Mobile number">
+        <button id="continue-btn">CONTINUE</button>
+      </form>
+      <p id="terms">EN Entertainment is a subscription service that will automatically renew for 1 USD / 7 Day(s). You can unsubscribe from the service at anytime, by sending STOP to **** for (operator). To make use of this service
